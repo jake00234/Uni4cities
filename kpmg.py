@@ -3,13 +3,15 @@ import azure.cognitiveservices.speech  as speechsdk
 
 print("Say something")
 
-intent_config = speechsdk.SpeechConfig(subscription="619e13948165430b8b6174550a5d6006", region="westus")
+intent_config = speechsdk.SpeechConfig(subscription="619e13948165430b8b6174550a5d6006", region="westus", speech_recognition_language = "ko-KR")
 intent_recognizer = speechsdk.intent.IntentRecognizer(speech_config=intent_config)
 
 model = speechsdk.intent.LanguageUnderstandingModel(app_id="6016da04-d862-4676-8771-e97518934132")
 intents = [
+    (model, "None"),
     (model, "이해하지못함"),
     (model, "이해함")
+
 ]
 intent_recognizer.add_intents(intents)
 
