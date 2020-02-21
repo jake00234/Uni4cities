@@ -12,7 +12,7 @@ News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/
   *Microsoft Azure Cognitive Services
   Azure: <https://azure.microsoft.com/ko-kr/>
   
-  <img src="/home/youngjaebae/Downloads/0.jpeg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Azure"></img><br/>
+  <img src="/home/youngjaebae/Downloads/0.jpeg" width="450px" height="300px" alt="Azure"></img><br/>
   
 
 
