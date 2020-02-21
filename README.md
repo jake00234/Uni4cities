@@ -4,10 +4,10 @@ KPMG Ideathon Group 13
 Preventing Incomplete Contract
 -------------
 
-## * Background
+## Background
 News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/173358/>
 
-## * Tech
+## Tech
 
   *Microsoft Azure Cognitive Services
   Azure: <https://azure.microsoft.com/ko-kr/>
