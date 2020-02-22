@@ -2,8 +2,14 @@ KPMG Ideathon Challenge: Incomplete Contract Prevention AI
 =============
 
 ## Background
-News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/173358/>
 
+fyi - News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/173358/>
+This service is designed to solve problems that may arise in the process of financial companies when selling their financial products to their consumers.
+Possible problems may include:
+- Omission of important points, falsehood, exaggeration
+- Unable to identify individual customers
+- Non-conscience and oversight halls of enterprises
+- Technical limitations for non-face sales
 
 ## How it should worked
 
