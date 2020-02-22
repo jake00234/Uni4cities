@@ -80,10 +80,8 @@ def key_phrases():
     try:
         documents = [
             {"id": "1", "language": "ko", "text": "하락률이 가장 큰 자산"},
-            {"id": "2", "language": "ko",
-                "text": "하락률이 가장 높은 자산"},
-            {"id": "3", "language": "ko",
-                "text": "하락률 이 큰 자산"},
+            {"id": "2", "language": "ko", "text": "하락률이 가장 높은 자산"},
+            {"id": "3", "language": "ko","text": "하락률 이 큰 자산"},
             {"id": "4", "language": "ko", "text": "오십오퍼센트요"},
             {"id": "5", "language": "ko", "text": "오십오퍼센트"},
             {"id": "6", "language": "ko", "text": "55% 라고 생각합니다"},
