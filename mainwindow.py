@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
 
     def onShowPolicyButtonClicked(self):
         print('clicked')
-        webbrowser.open_new(r'./policy.pdf')
+        webbrowser.open_new('policy.pdf')
 
     def onNextButtonClicked(self):
         print('clicked')

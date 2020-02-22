@@ -21,7 +21,7 @@ class Ui_recordWindow(object):
 
     def __init__(self):
         print("0")
-        file=open('./questions/question1.txt','r')
+        file=open('./questions/question1.txt','r', encoding='utf-8-sig')
         self.All=file.read()
         file.close()
         
@@ -63,7 +63,7 @@ class Ui_recordWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "TextLabel"))
+        self.label.setText(_translate("MainWindow", "질문"))
         self.recordButton.setText(_translate("MainWindow", "녹음"))
         self.NextButton.setText(_translate("MainWindow", "다음"))
 
@@ -81,14 +81,14 @@ class Ui_recordWindow(object):
 
     def onNextButtonClicked(self):
         if self.numclicked == 0:
-            file=open('./questions/question2.txt','r')
+            file=open('./questions/question2.txt','r', encoding='utf-8-sig')
             self.All=file.read()
             file.close()
             self.textBrowser.setText(self.All)
             self.numclicked = self.numclicked + 1
 
         elif self.numclicked == 1:
-            file=open('./questions/question3.txt','r')
+            file=open('./questions/question3.txt','r', encoding='utf-8-sig')
             self.All=file.read()
             file.close()
             self.textBrowser.setText(self.All)
