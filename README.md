@@ -1,12 +1,16 @@
-KPMG Ideathon Challenge: 
-Incomplete Contract Prevention AI
+KPMG Ideathon Challenge: Incomplete Contract Prevention AI
 =============
-
-Project: Incomplete Contract Prevention AI
+project by Uni4cities
 -------------
 
 ## Background
 News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/173358/>
+
+
+## Model Flow Chart
+
+
+## Project Outcome
 
 ## Tech
 
@@ -29,7 +33,8 @@ News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/
   7. Generate report of customer
   8. Company(maybe Bank, Insurance company.. and so on) examines customer by report
   
-## What's needed
+### Prerequisites
+```
   python3 (Python Software Foundation License)
   
   gensim for summarizing with WordRank Method (GNU LGPLv2.1 license)
@@ -47,7 +52,14 @@ News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/
   Matplotlib (Python Software Foundation License)
   
   Numpy (3-clause BSD License)
-  
+  ```
 
 
+
+## Contributors of Uni4cities
+* 이제혁(leader)  jake00234@gmail.com
+* 배영재          qodudwos@gmail.com
+* 안리아          anlia.seoul@gmail.com
+* 전상유          annajeon322322@gmail.com
+* 황수정          hwangssu5194@gmail.com
 
