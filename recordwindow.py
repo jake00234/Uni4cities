@@ -196,7 +196,7 @@ class Ui_recordWindow(object):
 
         i = 0
         face_list = []
-        while i <= 3:
+        while i < 3:
             img_name = "image{}.png".format(i)
             emotionresult = EmotionFace(img_name).emotions
             print('문제'+str(i)+emotionresult)
@@ -277,16 +277,14 @@ class Ui_recordWindow(object):
         for i in range(3):
             image_path = 'image'+str(i)+'.png'
             document.add_picture(image_path, width= Cm(4.91), height= Cm(8))
-            table = document.add_table(rows = 4, cols = 4)
+            table = document.add_table(rows =1, cols = 1)
             table.style = document.styles['Table Grid']
             new_face = face_list[i].split(', ')
-            for g in range(8):
-                face_emotion =new_face.split(': ')
-                hdr_cells2= table.rows[i].cells
-                hdr_cells2[2*g].paragraphs[0].add_run(face_emotion[2*g]).bold = True
-                hdr_cells2[2*g].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
-                hdr_cells2[2*g+1].paragraphs[0].add_run(face_emotion[2*g+1]).bold = True
-                hdr_cells2[2*g+1].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER 
+            cell = table.cell(0,0)
+            cell.text = face_list[i]
+            
+    
+              
                 
 
 
@@ -300,15 +298,15 @@ class Ui_recordWindow(object):
         table3 = document.add_table(rows = 4, cols = 3)
         table3.style = document.styles['Table Grid']
         
-        hdr_cells2= table3.rows[0].cells
-        hdr_cells2[0].paragraphs[0].add_run('긍정').bold = True
-        hdr_cells2[0].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER 
-        hdr_cells2[1].paragraphs[0].add_run('중립').bold = True
-        hdr_cells2[1].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
-        hdr_cells2[2].paragraphs[0].add_run('부정').bold = True
-        hdr_cells2[2].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+        hdr_cells3= table3.rows[0].cells
+        hdr_cells3[0].paragraphs[0].add_run('긍정').bold = True
+        hdr_cells3[0].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER 
+        hdr_cells3[1].paragraphs[0].add_run('중립').bold = True
+        hdr_cells3[1].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+        hdr_cells3[2].paragraphs[0].add_run('부정').bold = True
+        hdr_cells3[2].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
         for i in range(3):
-            hdr_cells3 = table.rows[i+1].cells
+            hdr_cells3 = table3.rows[i+1].cells
             for g in range(3):
                 hdr_cells3[g].paragraphs[0].add_run(str(voice[i][g])).bold = True
                 hdr_cells3[g].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER 
