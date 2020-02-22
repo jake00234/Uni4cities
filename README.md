@@ -1,7 +1,5 @@
 KPMG Ideathon Challenge: Incomplete Contract Prevention AI
 =============
-by Uni4cities
--------------
 
 ## Background
 News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/173358/>
