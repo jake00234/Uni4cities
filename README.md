@@ -23,9 +23,6 @@ Possible problems may include:
   8. Company(maybe Bank, Insurance company.. and so on) examines customer by report
   
   
-## Model Flow Chart
-
-
 
 ## Project Outcome
 
