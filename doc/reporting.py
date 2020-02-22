@@ -52,7 +52,7 @@ pp1.italic = True
 font1 = pp1.font
 font1.size = Pt(17)
 
-f1 = open('result2.txt', 'rt', encoding='utf-8-sig')
+'''f1 = open('result2.txt', 'rt', encoding='utf-8-sig')
 data = f1.readlines()
 f1.close()
 for datum in data:
@@ -60,7 +60,7 @@ for datum in data:
         pp2 = p1.add_run(datum)
         font2 = pp2.font
         font2.size = Pt(12)
-    
+    '''
 
 p3 = document.add_paragraph()
 pp3= p3.add_run('\n얼굴 분석 결과\n')
