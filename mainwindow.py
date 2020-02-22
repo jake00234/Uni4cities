@@ -60,7 +60,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "비대면상품ai서비스"))
         self.NextButton.setText(_translate("MainWindow", "Next >"))
         self.ShowPolicy.setText(_translate("MainWindow", "약관 보기"))
         self.label_3.setText(_translate("MainWindow", "<html><head/><body><p>선택하신 상품은 비대면 상품확인 방법을 통해 지점방문(대면) 또는 ARS가 <br/>아닌 방식으로 인증하여 가입이 가능한 서비스를 제공합니다.</p><p>반드시 본인만 서비스를 통한 인증이 가능(내국민 개인에 한함)하며,<br/>마이크와 카메라가 있는 환경에서 이용해주시기 바랍니다.</p><p>아래의 &lt;약관 보기&gt; 버튼을 눌러 약관을 숙지 후 다음화면을 실행하세요.</p></body></html>"))
@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
 
     def onShowPolicyButtonClicked(self):
         print('clicked')
-        webbrowser.open_new(r'./policy.pdf')
+        webbrowser.open_new('policy.pdf')
 
     def onNextButtonClicked(self):
         print('clicked')
