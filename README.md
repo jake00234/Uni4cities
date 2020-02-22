@@ -33,23 +33,23 @@ News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/
   
 ### Prerequisites
 ```
-  python3 (Python Software Foundation License)
+  * python3 (Python Software Foundation License)
   
-  gensim for summarizing with WordRank Method (GNU LGPLv2.1 license)
+  * gensim for summarizing with WordRank Method (GNU LGPLv2.1 license)
   
-  python-docx2txt for pharsing docx (MIT License)
+  * python-docx2txt for pharsing docx (MIT License)
   
-  python-docx for generating report (MIT License)
+  * python-docx for generating report (MIT License)
   
-  opencv for capturing camera (3-clause BSD License)
+  * opencv for capturing camera (3-clause BSD License)
 
-  PyQt5 for GUI (GNU GPL and Commercial)
+  * PyQt5 for GUI (GNU GPL and Commercial)
   
-  Azure face python sdk, Azure textanalysis python sdk, Azure speech python sdk (Commerical)
+  * Azure face python sdk, Azure textanalysis python sdk, Azure speech python sdk (Commerical)
   
-  Matplotlib (Python Software Foundation License)
+  * Matplotlib (Python Software Foundation License)
   
-  Numpy (3-clause BSD License)
+  * Numpy (3-clause BSD License)
   ```
 
 
