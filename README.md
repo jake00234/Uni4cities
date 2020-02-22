@@ -1,6 +1,6 @@
 KPMG Ideathon Challenge: Incomplete Contract Prevention AI
 =============
-project by Uni4cities
+by Uni4cities
 -------------
 
 ## Background
