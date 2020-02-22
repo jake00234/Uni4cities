@@ -21,17 +21,21 @@ News About Incomplete Contract: <https://www.mk.co.kr/news/economy/view/2020/02/
 ## What's needed
   python3
   
-  gensim for summarizing with WordRank Method
+  gensim for summarizing with WordRank Method (GNU LGPLv2.1 license)
   
-  docx2txt for pharsing docx
+  python-docx2txt for pharsing docx (MIT License)
   
-  python-docx for generating report
+  python-docx for generating report (MIT License)
   
-  opencv for capturing camera
+  opencv for capturing camera (3-clause BSD License)
 
-  PyQt5 for GUI
+  PyQt5 for GUI (GNU GPL and Commercial)
   
-  Azure face python sdk, Azure textanalysis python sdk, Azure speech python sdk, Matplotlib, Numpy
+  Azure face python sdk, Azure textanalysis python sdk, Azure speech python sdk (Commerical)
+  
+  Matplotlib Python (Software Foundation License)
+  
+  Numpy (3-clause BSD License)
   
 
 
