@@ -1,7 +1,7 @@
-KPMG Ideathon Group 13
+KPMG Ideathon Challenge: Incomplete Contract Prevention AI
 =============
 
-Preventing Incomplete Contract
+Project: Incomplete Contract Prevention AI
 -------------
 
 ## Background
