@@ -22,12 +22,6 @@ Possible problems may include:
   7. Generate report of customer
   8. Company(maybe Bank, Insurance company.. and so on) examines customer by report
   
-  
-
-## Project Outcome
-
-  Everything except Generating questions. It's our future work
-
 
 ## Tech
 
