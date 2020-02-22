@@ -156,7 +156,7 @@ class Ui_recordWindow(object):
         for doc in result:
             print(doc.key_phrases)
 
-        
+    
 
         print("<----keyphrase\n")
 
