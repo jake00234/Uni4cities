@@ -21,7 +21,10 @@ Possible problems may include:
   6. Score customer's Understanding
   7. Generate report of customer
   8. Company(maybe Bank, Insurance company.. and so on) examines customer by report
-  
+
+## Model flow chart
+<img width="1594" alt="KakaoTalk_20200222_235852099" src="https://user-images.githubusercontent.com/44601516/75094542-65a31800-55cf-11ea-8d02-ef41d81fc541.png">
+
 
 ## Tech
 
