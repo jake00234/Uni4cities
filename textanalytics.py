@@ -4,10 +4,10 @@ import os
 from azure.cognitiveservices.language.textanalytics import TextAnalyticsClient
 from azure.ai.textanalytics import single_analyze_sentiment
 from msrest.authentication import CognitiveServicesCredentials
-
-subscription_key = "2fbd0184b74d47af86b065ad503ab89f"
+import key
+subscription_key = key.text_key
 endpoint = "https://kpmg-text.cognitiveservices.azure.com/"
-key = "2fbd0184b74d47af86b065ad503ab89f"
+key = key.text_key
 def authenticateClient():
     credentials = CognitiveServicesCredentials(subscription_key)
     text_analytics_client = TextAnalyticsClient(

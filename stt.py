@@ -1,7 +1,7 @@
 
 import azure.cognitiveservices.speech as speechsdk
-
-
+import key
+key = key.stt_key
 class SpeechToText:
 
     text = ""
@@ -9,7 +9,7 @@ class SpeechToText:
     def __init__(self):
         print("Say Something")
 
-        speech_config = speechsdk.SpeechConfig(subscription="65177667639a4052b08c334e9be21c04", region="westus", speech_recognition_language="ko-KR")
+        speech_config = speechsdk.SpeechConfig(subscription= key, region="westus", speech_recognition_language="ko-KR")
         speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
       
         # Starts intent recognition, and returns after a single utterance is recognized. The end of a

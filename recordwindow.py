@@ -6,7 +6,6 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-key = "2fbd0184b74d47af86b065ad503ab89f"
 endpoint = "https://kpmg-text.cognitiveservices.azure.com/"
 
 
@@ -16,7 +15,8 @@ from Face import EmotionFace
 from azure.ai.textanalytics import TextAnalyticsClient, TextAnalyticsApiKeyCredential
 from capture import Capture
 import sys
-
+import key
+key = key.text_key
 class Ui_recordWindow(object):
 
     All=''

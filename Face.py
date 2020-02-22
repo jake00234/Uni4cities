@@ -1,6 +1,6 @@
 import requests
 import json
-
+import key
 
 class EmotionFace:
 
@@ -8,7 +8,7 @@ class EmotionFace:
 
     def __init__(self,src):
 # set to your own subscription key value
-        subscription_key ="ffc0143020ac4e2893f47c0d7e753b47"
+        subscription_key =key.face_key
         assert subscription_key
 
 # replace <My Endpoint String> with the string from your endpoint URL
