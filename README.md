@@ -1,4 +1,5 @@
-KPMG Ideathon Challenge: Incomplete Contract Prevention AI
+KPMG Ideathon Challenge: 
+Incomplete Contract Prevention AI
 =============
 
 Project: Incomplete Contract Prevention AI
