@@ -194,12 +194,14 @@ class Ui_recordWindow(object):
         print('score='+str(result123)+'%')
         print("<----keyphrase\n")
 
-        '''i = 0
-        while i <= self.numclicked:
+        i = 0
+        face_list = []
+        while i <= 3:
             img_name = "image{}.png".format(i)
             emotionresult = EmotionFace(img_name).emotions
             print('문제'+str(i)+emotionresult)
-            i= i+1'''
+            face_list.append(emotionresult)
+            i= i+1
 
         import docx
         from docx import Document
@@ -207,6 +209,7 @@ class Ui_recordWindow(object):
         from docx.oxml.ns import qn 
         from docx.shared import Pt
         import personal as ps
+        from docx.shared import Cm, Inches
 
         document = Document()
 
@@ -247,12 +250,12 @@ class Ui_recordWindow(object):
         hdr_cells1[3].paragraphs[0].add_run(str(result123)).bold = True
         hdr_cells1[3].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
 
-        p1 = document.add_paragraph()
+        '''p1 = document.add_paragraph()
         pp1= p1.add_run('\n약관 요약(넣을꺼없어서 넣었음)\n')
         pp1.bold = True
         pp1.italic = True
         font1 = pp1.font
-        font1.size = Pt(17)
+        font1.size = Pt(17)'''
 
         '''f1 = open('result2.txt', 'rt', encoding='utf-8-sig')
         data = f1.readlines()
@@ -271,6 +274,21 @@ class Ui_recordWindow(object):
         font3 = pp3.font
         font3.size = Pt(17)
         #해야됨
+        for i in range(3):
+            image_path = 'image'+str(i)+'.png'
+            document.add_picture(image_path, width= Cm(4.91), height= Cm(8))
+            table = document.add_table(rows = 4, cols = 4)
+            table.style = document.styles['Table Grid']
+            new_face = face_list[i].split(', ')
+            for g in range(8):
+                face_emotion =new_face.split(': ')
+                hdr_cells2= table.rows[i].cells
+                hdr_cells2[2*g].paragraphs[0].add_run(face_emotion[2*g]).bold = True
+                hdr_cells2[2*g].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER
+                hdr_cells2[2*g+1].paragraphs[0].add_run(face_emotion[2*g+1]).bold = True
+                hdr_cells2[2*g+1].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER 
+                
+
 
         p6 = document.add_paragraph()
         pp6= p6.add_run('\n음성 분석 결과\n')
@@ -278,10 +296,11 @@ class Ui_recordWindow(object):
         pp6.italic = True
         font6 = pp6.font
         font6.size = Pt(17)
-        table = document.add_table(rows = 4, cols = 3)
-        table.style = document.styles['Table Grid']
+
+        table3 = document.add_table(rows = 4, cols = 3)
+        table3.style = document.styles['Table Grid']
         
-        hdr_cells2= table.rows[0].cells
+        hdr_cells2= table3.rows[0].cells
         hdr_cells2[0].paragraphs[0].add_run('긍정').bold = True
         hdr_cells2[0].paragraphs[0].alignment = WD_ALIGN_PARAGRAPH.CENTER 
         hdr_cells2[1].paragraphs[0].add_run('중립').bold = True
