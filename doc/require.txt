@@ -1,0 +1,4 @@
+package:
+    docx2txt
+    python-docx
+    gensim
